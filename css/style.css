@@ -81,7 +81,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #28d979;
 }
 button:focus,
 button:focus-visible {
@@ -97,7 +97,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
   }
 }
 
@@ -159,4 +159,9 @@ ul.editable-list {
 
 .editable-list li.editable {
   padding-left: 1em;
+}
+
+#resume {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }

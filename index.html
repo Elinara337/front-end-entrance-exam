@@ -28,319 +28,353 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <a href="public/Resume.pdf" download>
-      <button id="download-pdf" class="download-button">Download PDF</button>
-    </a>
-    <header class="header">
-      <div class="header__container">
-        <img class="header__photo" src="img/photo.svg" alt="Фото профиля" />
+    <button id="downloadPdf" class="download-button">Download PDF</button>
+    <div id="resume" class="resume">
+      <header class="header">
+        <div class="header__container">
+          <img class="header__photo" src="img/photo.svg" alt="Фото профиля" />
 
-        <div class="box header__info-container">
-          <p class="editable header__info-text-greeting">Hello👋🏻I'm</p>
-          <p class="editable header__info-text-name">Karthik SR</p>
-          <p class="editable header__info-text-role">UX/UI Designer</p>
+          <div class="box header__info-container">
+            <p class="editable header__info-text-greeting">Hello👋🏻I'm</p>
+            <p class="editable header__info-text-name">Karthik SR</p>
+            <p class="editable header__info-text-role">UX/UI Designer</p>
+          </div>
+
+          <container class="box header__languages-container">
+            <p class="editable header__languages-text">Languages</p>
+            <div class="header__languages-text-name">
+              <div class="language-row">
+                <span class="editable">English</span>
+                <div class="stripe-1"></div>
+              </div>
+              <div class="language-row">
+                <span class="editable">Malayalam</span>
+                <div class="stripe-2"></div>
+              </div>
+              <div class="language-row">
+                <span class="editable">Hindi</span>
+                <div class="stripe-3"></div>
+              </div>
+            </div>
+          </container>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__top-row">
+          <section class="box experience">
+            <span class="editable experience__title">Experience</span>
+
+            <section class="box experience__job-1">
+              <span class="editable experience__job-1-date"
+                >Jun. 2023 - Present</span
+              >
+              <span class="editable experience__job-1-role"
+                >Marketing Manager</span
+              >
+              <div class="experience__job-1-meta">
+                <span class="editable experience__job-1-company">Pankayam</span>
+                <span class="editable experience__job-1-employment"
+                  >Full-time</span
+                >
+              </div>
+              <ul class="editable-list experience__job-1-responsibilities">
+                <li class="editable">
+                  Strategy development and planning of campaigns that promote
+                  the business and generate genuine traffic
+                </li>
+                <li class="editable">
+                  SEO Content Creation for Blogs, Website, Social media
+                </li>
+              </ul>
+
+              <span class="editable experience__most-recent">most recent</span>
+            </section>
+
+            <section class="box experience__job-2">
+              <span class="editable experience__job-2-date"
+                >2017 - Present</span
+              >
+              <span class="editable experience__job-2-role"
+                >Graphic / Web designer</span
+              >
+              <span class="editable experience__job-2-company">Freelance</span>
+
+              <ul class="editable-list experience__job-2-responsibilities">
+                <li class="editable">
+                  Development of internal projects from scratch, product design
+                  of brands
+                </li>
+                <li class="editable">Landing page, webapps and hybrid apps</li>
+                <li class="editable">
+                  Coordinating with outside agencies, art services, web
+                  designer, marketing, printers, and colleagues as necessary.
+                </li>
+              </ul>
+            </section>
+
+            <section class="box experience__job-3">
+              <span class="editable experience__job-3-date"
+                >Sep. 2021 - Jun. 2023</span
+              >
+              <span class="editable experience__job-3-role"
+                >Legal Assistant</span
+              >
+
+              <div class="experience__job-3-meta">
+                <span class="editable experience__job-3-company">Law Firm</span>
+                <span class="editable experience__job-3-employment"
+                  >Intern</span
+                >
+              </div>
+
+              <ul class="editable-list experience__job-3-responsibilities">
+                <li class="editable">
+                  Provide administrative support to lawyer and enhance office
+                  effectiveness
+                </li>
+                <li class="editable">
+                  Handle communication with clients, witnesses etc.
+                </li>
+                <li class="editable">
+                  repare case briefs and summarize depositions, interrogatories
+                  and testimony
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <section class="box tools">
+            <span class="editable tools__title">Tools</span>
+            <section class="box tools__design">
+              <span class="editable tools__design-label">design</span>
+
+              <img
+                class="tools__design-logo-Figma"
+                src="img/logoFigma.svg"
+                alt="Лого Figma"
+              />
+              <img
+                class="tools__design-logo-Photoshop"
+                src="img/🦆 icon _adobe photoshop_.svg"
+                alt="Лого Adobe Photoshop"
+              />
+              <img
+                class="tools__design-logo-Illustrator"
+                src="img/🦆 icon _adobe illustrator_.svg"
+                alt="Лого Adobe Illustrator"
+              />
+              <img
+                class="tools__design-logo-Premiere"
+                src="img/🦆 icon _adobe premiere_.svg"
+                alt="Лого Adobe Premiere"
+              />
+              <img
+                class="tools__design-logo-Notion"
+                src="img/logoNotion.svg"
+                alt="Лого Notion"
+              />
+              <img
+                class="tools__design-logo-Meet"
+                src="img/logoMeet.svg"
+                alt="Лого Google Meet"
+              />
+            </section>
+            <section class="box tools__no-code">
+              <span class="editable tools__no-code-label">no-code</span>
+
+              <img
+                class="tools__no-code-logo-Zapier"
+                src="img/logoZapìer 1.svg"
+                alt="Лого Zapier"
+              />
+              <img
+                class="tools__no-code-logo-Webflow"
+                src="img/logoWebflow.svg"
+                alt="Лого Webflow"
+              />
+              <img
+                class="tools__no-code-logo-Framer"
+                src="img/logoFramer.svg"
+                alt="Лого Framer"
+              />
+              <img
+                class="tools__no-code-logo-Wordpress"
+                src="img/logoWordpress.svg"
+                alt="Лого Wordpress"
+              />
+            </section>
+            <section class="box tools__artificial-intelligence">
+              <span class="editable tools__artificial-intelligence-label"
+                >artificial intelligence</span
+              >
+
+              <img
+                class="tools__artificial-intelligence-logo-ChatGPT"
+                src="img/logoChatGPT 1.svg"
+                alt="Лого ChatGPT"
+              />
+              <img
+                class="tools__artificial-intelligence-logo-Copilot"
+                src="img/logoCopilot 1.svg"
+                alt="Лого Copilot"
+              />
+              <img
+                class="tools__artificial-intelligence-logo-Midjourney"
+                src="img/logoMidjourney 1.svg"
+                alt="Лого Midjourney"
+              />
+            </section>
+          </section>
         </div>
 
-        <container class="box header__languages-container">
-          <p class="editable header__languages-text">Languages</p>
-          <div class="header__languages-text-name">
-            <div class="language-row">
-              <span class="editable">English</span>
-              <div class="stripe-1"></div>
-            </div>
-            <div class="language-row">
-              <span class="editable">Malayalam</span>
-              <div class="stripe-2"></div>
-            </div>
-            <div class="language-row">
-              <span class="editable">Hindi</span>
-              <div class="stripe-3"></div>
-            </div>
-          </div>
-        </container>
-      </div>
-    </header>
+        <div class="main__bottom-row">
+          <section class="box education">
+            <span class="editable education__title">Education</span>
 
-    <main class="main">
-      <div class="main__top-row">
-        <section class="box experience">
-          <span class="editable experience__title">Experience</span>
+            <div class="education__row">
+              <section class="box education__last-education">
+                <div class="education__last-education-year-container">
+                  <span class="editable education__last-education-year"
+                    >2023</span
+                  >
+                  <img
+                    class="education__last-education-heart"
+                    src="img/heart.svg"
+                    alt="Сердечко"
+                  />
+                </div>
+                <span class="editable education__last-education-name"
+                  >UI/UX</span
+                >
 
-          <section class="box experience__job-1">
-            <span class="editable experience__job-1-date"
-              >Jun. 2023 - Present</span
-            >
-            <span class="editable experience__job-1-role"
-              >Marketing Manager</span
-            >
-            <div class="experience__job-1-meta">
-              <span class="editable experience__job-1-company">Pankayam</span>
-              <span class="editable experience__job-1-employment"
-                >Full-time</span
+                <div class="education__last-education-tags-wrapper">
+                  <span class="editable education__last-education-tag"
+                    >#UX</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#UI</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#research</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#DesignSystem</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#Ui</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#wireframing</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#figma</span
+                  >
+                  <span class="editable education__last-education-tag"
+                    >#Ux</span
+                  >
+                </div>
+
+                <span class="editable education__last-education-school"
+                  >Coursera</span
+                >
+              </section>
+
+              <section class="box education__education-1">
+                <span class="editable education__education-1-year"
+                  >2017 - 2022</span
+                >
+                <span class="editable education__education-1-name">Law</span>
+
+                <div class="education__education-1-tags-wrapper">
+                  <span class="editable education__education-1-tag">#law</span>
+                  <span class="editable education__education-1-tag"
+                    >#legalStudies</span
+                  >
+                  <span class="editable education__education-1-tag"
+                    >#contracts</span
+                  >
+                  <span class="editable education__education-1-tag"
+                    >#internationalLaws</span
+                  >
+                </div>
+
+                <span class="editable education__education-1-school"
+                  >University of Kerala</span
+                >
+              </section>
+            </div>
+
+            <section class="box education__education-2">
+              <span class="editable education__education-2-year">2017</span>
+              <span class="editable education__education-2-name"
+                >Graphic design</span
               >
-            </div>
-            <ul class="editable-list experience__job-1-responsibilities">
-              <li class="editable">
-                Strategy development and planning of campaigns that promote the
-                business and generate genuine traffic
-              </li>
-              <li class="editable">
-                SEO Content Creation for Blogs, Website, Social media
-              </li>
-            </ul>
 
-            <span class="editable experience__most-recent">most recent</span>
-          </section>
-
-          <section class="box experience__job-2">
-            <span class="editable experience__job-2-date">2017 - Present</span>
-            <span class="editable experience__job-2-role"
-              >Graphic / Web designer</span
-            >
-            <span class="editable experience__job-2-company">Freelance</span>
-
-            <ul class="editable-list experience__job-2-responsibilities">
-              <li class="editable">
-                Development of internal projects from scratch, product design of
-                brands
-              </li>
-              <li class="editable">Landing page, webapps and hybrid apps</li>
-              <li class="editable">
-                Coordinating with outside agencies, art services, web designer,
-                marketing, printers, and colleagues as necessary.
-              </li>
-            </ul>
-          </section>
-
-          <section class="box experience__job-3">
-            <span class="editable experience__job-3-date"
-              >Sep. 2021 - Jun. 2023</span
-            >
-            <span class="editable experience__job-3-role">Legal Assistant</span>
-
-            <div class="experience__job-3-meta">
-              <span class="editable experience__job-3-company">Law Firm</span>
-              <span class="editable experience__job-3-employment">Intern</span>
-            </div>
-
-            <ul class="editable-list experience__job-3-responsibilities">
-              <li class="editable">
-                Provide administrative support to lawyer and enhance office
-                effectiveness
-              </li>
-              <li class="editable">
-                Handle communication with clients, witnesses etc.
-              </li>
-              <li class="editable">
-                repare case briefs and summarize depositions, interrogatories
-                and testimony
-              </li>
-            </ul>
-          </section>
-        </section>
-
-        <section class="box tools">
-          <span class="editable tools__title">Tools</span>
-          <section class="box tools__design">
-            <span class="editable tools__design-label">design</span>
-
-            <img
-              class="tools__design-logo-Figma"
-              src="img/logoFigma.svg"
-              alt="Лого Figma"
-            />
-            <img
-              class="tools__design-logo-Photoshop"
-              src="img/🦆 icon _adobe photoshop_.svg"
-              alt="Лого Adobe Photoshop"
-            />
-            <img
-              class="tools__design-logo-Illustrator"
-              src="img/🦆 icon _adobe illustrator_.svg"
-              alt="Лого Adobe Illustrator"
-            />
-            <img
-              class="tools__design-logo-Premiere"
-              src="img/🦆 icon _adobe premiere_.svg"
-              alt="Лого Adobe Premiere"
-            />
-            <img
-              class="tools__design-logo-Notion"
-              src="img/logoNotion.svg"
-              alt="Лого Notion"
-            />
-            <img
-              class="tools__design-logo-Meet"
-              src="img/logoMeet.svg"
-              alt="Лого Google Meet"
-            />
-          </section>
-          <section class="box tools__no-code">
-            <span class="editable tools__no-code-label">no-code</span>
-
-            <img
-              class="tools__no-code-logo-Zapier"
-              src="img/logoZapìer 1.svg"
-              alt="Лого Zapier"
-            />
-            <img
-              class="tools__no-code-logo-Webflow"
-              src="img/logoWebflow.svg"
-              alt="Лого Webflow"
-            />
-            <img
-              class="tools__no-code-logo-Framer"
-              src="img/logoFramer.svg"
-              alt="Лого Framer"
-            />
-            <img
-              class="tools__no-code-logo-Wordpress"
-              src="img/logoWordpress.svg"
-              alt="Лого Wordpress"
-            />
-          </section>
-          <section class="box tools__artificial-intelligence">
-            <span class="editable tools__artificial-intelligence-label"
-              >artificial intelligence</span
-            >
-
-            <img
-              class="tools__artificial-intelligence-logo-ChatGPT"
-              src="img/logoChatGPT 1.svg"
-              alt="Лого ChatGPT"
-            />
-            <img
-              class="tools__artificial-intelligence-logo-Copilot"
-              src="img/logoCopilot 1.svg"
-              alt="Лого Copilot"
-            />
-            <img
-              class="tools__artificial-intelligence-logo-Midjourney"
-              src="img/logoMidjourney 1.svg"
-              alt="Лого Midjourney"
-            />
-          </section>
-        </section>
-      </div>
-
-      <div class="main__bottom-row">
-        <section class="box education">
-          <span class="editable education__title">Education</span>
-
-          <div class="education__row">
-            <section class="box education__last-education">
-              <div class="education__last-education-year-container">
-                <span class="editable education__last-education-year"
-                  >2023</span
+              <div class="education__education-2-tags-wrapper">
+                <span class="editable education__education-2-tag"
+                  >#branding</span
                 >
-                <img
-                  class="education__last-education-heart"
-                  src="img/heart.svg"
-                  alt="Сердечко"
-                />
-              </div>
-              <span class="editable education__last-education-name">UI/UX</span>
-
-              <div class="education__last-education-tags-wrapper">
-                <span class="editable education__last-education-tag">#UX</span>
-                <span class="editable education__last-education-tag">#UI</span>
-                <span class="editable education__last-education-tag"
-                  >#research</span
+                <span class="editable education__education-2-tag">#web</span>
+                <span class="editable education__education-2-tag"
+                  >#illustration</span
                 >
-                <span class="editable education__last-education-tag"
-                  >#DesignSystem</span
-                >
-                <span class="editable education__last-education-tag">#Ui</span>
-                <span class="editable education__last-education-tag"
-                  >#wireframing</span
-                >
-                <span class="editable education__last-education-tag"
-                  >#figma</span
-                >
-                <span class="editable education__last-education-tag">#Ux</span>
+                <span class="editable education__education-2-tag">#adobe</span>
               </div>
 
-              <span class="editable education__last-education-school"
+              <span class="editable education__education-2-school"
                 >Coursera</span
               >
             </section>
+          </section>
 
-            <section class="box education__education-1">
-              <span class="editable education__education-1-year"
-                >2017 - 2022</span
-              >
-              <span class="editable education__education-1-name">Law</span>
-
-              <div class="education__education-1-tags-wrapper">
-                <span class="editable education__education-1-tag">#law</span>
-                <span class="editable education__education-1-tag"
-                  >#legalStudies</span
+          <div class="main__bottom-row-right-column">
+            <section class="box interests">
+              <span class="editable interests__title">Interests</span>
+              <div class="interests__tags-wrapper">
+                <span class="editable interests__tag">branding</span>
+                <span class="editable interests__tag">design</span>
+                <span class="editable interests__tag">photography</span>
+                <span class="editable interests__tag"
+                  >artificial intelligence</span
                 >
-                <span class="editable education__education-1-tag"
-                  >#contracts</span
-                >
-                <span class="editable education__education-1-tag"
-                  >#internationalLaws</span
-                >
+                <span class="editable interests__tag">illustration</span>
+                <span class="editable interests__tag">typography</span>
+                <span class="editable interests__tag">social networks</span>
+                <span class="editable interests__tag">research</span>
+                <span class="editable interests__tag">dron pilot</span>
+                <span class="editable interests__tag">games</span>
               </div>
-
-              <span class="editable education__education-1-school"
-                >University of Kerala</span
-              >
             </section>
+
+            <footer class="box contact">
+              <span class="editable contact-title"
+                >Let´s chat! I´m ready to work on exciting projects</span
+              >
+              <span class="editable contact-gmail"
+                >srkarthik.designscape@gmail.com</span
+              >
+            </footer>
           </div>
-
-          <section class="box education__education-2">
-            <span class="editable education__education-2-year">2017</span>
-            <span class="editable education__education-2-name"
-              >Graphic design</span
-            >
-
-            <div class="education__education-2-tags-wrapper">
-              <span class="editable education__education-2-tag">#branding</span>
-              <span class="editable education__education-2-tag">#web</span>
-              <span class="editable education__education-2-tag"
-                >#illustration</span
-              >
-              <span class="editable education__education-2-tag">#adobe</span>
-            </div>
-
-            <span class="editable education__education-2-school">Coursera</span>
-          </section>
-        </section>
-
-        <div class="main__bottom-row-right-column">
-          <section class="box interests">
-            <span class="editable interests__title">Interests</span>
-            <div class="interests__tags-wrapper">
-              <span class="editable interests__tag">branding</span>
-              <span class="editable interests__tag">design</span>
-              <span class="editable interests__tag">photography</span>
-              <span class="editable interests__tag"
-                >artificial intelligence</span
-              >
-              <span class="editable interests__tag">illustration</span>
-              <span class="editable interests__tag">typography</span>
-              <span class="editable interests__tag">social networks</span>
-              <span class="editable interests__tag">research</span>
-              <span class="editable interests__tag">dron pilot</span>
-              <span class="editable interests__tag">games</span>
-            </div>
-          </section>
-
-          <footer class="box contact">
-            <span class="editable contact-title"
-              >Let´s chat! I´m ready to work on exciting projects</span
-            >
-            <span class="editable contact-gmail"
-              >srkarthik.designscape@gmail.com</span
-            >
-          </footer>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <script type="module" src="./js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+      const { jsPDF } = window.jspdf;
+
+      document
+        .getElementById("downloadPdf")
+        .addEventListener("click", async () => {
+          const element = document.getElementById("resume");
+          const canvas = await html2canvas(element);
+          const pdf = new jsPDF();
+          pdf.addImage(canvas.toDataURL("image/png"), "PNG", 0, 0);
+          pdf.save("resume.pdf");
+        });
+    </script>
   </body>
 </html>
