@@ -1,0 +1,475 @@
+.main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__top-row {
+  display: flex;
+  gap: 20px;
+}
+
+.main__bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.experience {
+  width: 411px;
+  height: 359px;
+  margin-left: 20px;
+}
+
+.experience__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.experience__job-1 {
+  width: 387px;
+  height: 76px;
+  margin-top: 16px;
+  padding: 8px;
+  background-color: #28d979;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.experience__job-1-date,
+.experience__job-2-date,
+.experience__job-3-date {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+.experience__job-1-role,
+.experience__job-2-role,
+.experience__job-3-role {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.experience__job-1-company,
+.experience__job-1-employment {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ebf9f2;
+}
+
+.experience__job-1-meta,
+.experience__job-3-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.experience__job-1-meta span:not(:last-child)::after,
+.experience__job-3-meta span:not(:last-child)::after {
+  content: "|";
+  margin-left: 6px;
+}
+
+.experience__job-1-responsibilities,
+.experience__job-2-responsibilities,
+.experience__job-3-responsibilities {
+  position: absolute;
+  top: 28px;
+  left: 148px;
+  margin: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  align-self: start;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+.experience__most-recent {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 0px;
+  align-items: center;
+  width: 61px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 59px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 155%;
+  color: #ddf163;
+  background-color: rgba(126, 115, 18, 40%);
+}
+
+.experience__job-2 {
+  width: 387px;
+  height: 108px;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.experience__job-2-company,
+.experience__job-3-company,
+.experience__job-3-employment {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #3f3d3d;
+}
+
+.experience__job-3 {
+  width: 387px;
+  height: 96px;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tools {
+  width: 124px;
+  height: 359px;
+}
+
+.tools__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+}
+
+.tools__design {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  place-items: center;
+  width: 76px;
+  height: 111.48px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.tools__design-label,
+.tools__no-code-label,
+.tools__artificial-intelligence-label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 11px;
+  transform: translate(-50%, -50%);
+  font-size: 5px;
+  font-weight: 400;
+  line-height: 142%;
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 59px;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 1;
+}
+
+.tools__design-label {
+  width: 30px;
+}
+
+.tools__no-code-label {
+  width: 35px;
+}
+
+.tools__artificial-intelligence-label {
+  width: 65px;
+}
+
+.tools__design img,
+.tools__no-code img,
+.tools__artificial-intelligence img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tools__design-logo-Figma {
+  width: 10px;
+  height: 15px;
+}
+
+.tools__design-logo-Photoshop {
+  width: 14.76px;
+  height: 14.76px;
+}
+
+.tools__design-logo-Illustrator {
+  width: 14.76px;
+  height: 14.76px;
+}
+
+.tools__design-logo-Premiere {
+  width: 14.76px;
+  height: 14.76px;
+}
+
+.tools__design-logo-Notion {
+  width: 17px;
+  height: 17.72px;
+}
+
+.tools__design-logo-Meet {
+  width: 19.5px;
+  height: 15.95px;
+}
+
+.tools__no-code {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  place-items: center;
+  width: 76px;
+  height: 86.57px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.tools__no-code-logo-Zapier {
+  width: 20px;
+  height: 20px;
+}
+
+.tools__no-code-logo-Webflow {
+  width: 18px;
+  height: 18px;
+}
+
+.tools__no-code-logo-Framer {
+  width: 13px;
+  height: 18.57px;
+}
+
+.tools__no-code-logo-Wordpress {
+  width: 17px;
+  height: 17px;
+}
+
+.tools__artificial-intelligence {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  place-items: center;
+  width: 76px;
+  height: 86px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.tools__artificial-intelligence-logo-ChatGPT,
+.tools__artificial-intelligence-logo-Midjourney {
+  width: 19px;
+  height: 19px;
+}
+
+.tools__artificial-intelligence-logo-Copilot {
+  width: 18px;
+  height: 19px;
+}
+
+.education {
+  width: 268px;
+  height: 289px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.education__row {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.education__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.education__last-education {
+  position: relative;
+  width: 116px;
+  height: 120px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #28d979;
+  color: white;
+}
+
+.education__last-education-year-container {
+  display: flex;
+  align-items: center;
+}
+
+.education__last-education-heart {
+  width: 11px;
+  height: 9.39px;
+  margin-left: auto;
+}
+
+.education__last-education-year,
+.education__last-education-name,
+.education__education-1-year,
+.education__education-1-name,
+.education__education-2-year,
+.education__education-2-name {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.education__last-education-name,
+.education__education-1-name,
+.education__education-2-name {
+  margin-top: 8px;
+  margin-bottom: -2px;
+}
+
+.education__last-education-tags-wrapper,
+.education__education-1-tags-wrapper,
+.education__education-2-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -2px;
+  line-height: 0;
+}
+
+.education__last-education-tag,
+.education__last-education-school,
+.education__education-1-tag,
+.education__education-1-school,
+.education__education-2-tag,
+.education__education-2-school {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+.education__last-education-tag {
+  color: #ebf9f2;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  height: 12px;
+  white-space: nowrap;
+}
+
+.education__last-education-school,
+.education__education-1-school,
+.education__education-2-school {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.education__education-1-tag,
+.education__education-2-tag {
+  color: #149063;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  height: 12px;
+  white-space: nowrap;
+}
+
+.education__education-1,
+.education__education-2 {
+  width: 116px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.education__education-1 {
+  height: 108px;
+}
+
+.education__education-2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 96px;
+}
+
+.main__bottom-row-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interests {
+  width: 267px;
+  height: 177px;
+}
+
+.interests__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+.interests__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  line-height: 0;
+}
+
+.interests__tag {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  height: 23px;
+  padding: 4px 10px;
+  border-radius: 40px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.contact {
+  width: 267px;
+  height: 92px;
+  background-color: black;
+  color: white;
+}
+
+.contact-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.contact-gmail {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #dddddd;
+  margin-top: auto;
+}

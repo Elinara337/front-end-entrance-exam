@@ -1,24 +1,42 @@
-import '../css/style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+document.addEventListener("DOMContentLoaded", function () {
+  const editables = document.querySelectorAll(".editable");
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+  editables.forEach((item) => {
+    const defaultText = item.textContent;
 
-setupCounter(document.querySelector('#counter'))
+    item.addEventListener("click", function () {
+      this.contentEditable = true;
+      this.focus();
+
+      const range = document.createRange();
+      range.selectNodeContents(this);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    });
+
+    item.addEventListener("blur", function () {
+      this.contentEditable = false;
+
+      if (!this.textContent.trim()) {
+        this.textContent = defaultText;
+      }
+
+      this.classList.add("saved");
+      setTimeout(() => this.classList.remove("saved"), 1500);
+
+      localStorage.setItem(this.className, this.textContent);
+    });
+
+    item.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        this.blur();
+      }
+    });
+
+    const savedText = localStorage.getItem(item.className);
+    if (savedText) {
+      item.textContent = savedText;
+    }
+  });
+});

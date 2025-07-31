@@ -1,16 +1,24 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: black;
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -24,10 +32,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -93,4 +99,64 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.editable {
+  transition: all 0.3s ease;
+  cursor: text;
+  min-width: 20px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+.editable[contenteditable="true"] {
+  background: white;
+  outline: 1px solid #28d979;
+  box-shadow: 0 0 0 2px rgba(40, 217, 121, 0.2);
+  border-radius: 12px;
+  padding: 2px 4px;
+}
+
+.editable:hover {
+  background-color: #abf6bb;
+}
+
+.editable:focus {
+  outline: 2px solid #28d979;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(40, 217, 121, 0.5);
+}
+
+@keyframes saved {
+  0% {
+    background-color: #e8f5e9;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.saved {
+  animation: saved 1.5s ease;
+}
+
+ul.editable-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.editable-list li {
+  position: relative;
+}
+
+.editable-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: inherit;
+}
+
+.editable-list li.editable {
+  padding-left: 1em;
 }
